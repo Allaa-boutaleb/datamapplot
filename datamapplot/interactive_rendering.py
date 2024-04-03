@@ -421,7 +421,7 @@ class InteractiveFigure:
 
     def save(self, filename):
         """Save an interactive firgure to the HTML file with name `filename`"""
-        with open(filename, "w+") as f:
+        with open(filename, "w+", encoding="utf-8") as f:
             f.write(self._html_str)
 
 
